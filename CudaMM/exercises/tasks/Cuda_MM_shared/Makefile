@@ -23,9 +23,9 @@ run: all runGPU runGPUMemcpy
 .phony: runGPU
 
 runGPU: Cuda_MM_shared
-	bsub -I -R "rusage[ngpus_shared=1]" ./Cuda_MM_shared
+	bsub -I -R "rusage[ngpus_shared=1]" -U cuda18_2 ./Cuda_MM_shared
 
 .phony: runGPUMemcpy
 
 runGPUMemcpy: Cuda_MM_shared_memcpy
-	bsub -I -R "rusage[ngpus_shared=1]" ./Cuda_MM_shared_memcpy
+	bsub -I -R "rusage[ngpus_shared=1]" -U cuda18_2  ./Cuda_MM_shared_memcpy

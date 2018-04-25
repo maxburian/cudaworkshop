@@ -74,12 +74,15 @@ int main (int argc, char** argv)
   checkError("Start copy host to device for y");
 	
   //TODO: Set cuBLAS execution stream
-	
+  //cudaStream_t stream;
+  cudaStreamCreate( &stream);
+  cudaEventCreate(&startEvent);
+  
   cudaEventRecord ( startEvent, stream );
   checkError("Record CUDA event startEvent");
 
   //TODO: Call cuBLAS SAXPY
-
+  cublasSaxpy(cuBLAShandle, numElements, &alpha, xD,1,yD,1);
   cudaEventRecord ( endEvent, stream );
   checkError("Record CUDA event endEvent");
 	
@@ -92,8 +95,8 @@ int main (int argc, char** argv)
  
   //TODO: move cudaStreamSynchronize after host calculation to allow overlap of device side saxpy and
   //	    host side saxpy (use time ./task2 to time runtime)
-  cudaStreamSynchronize( stream );
-  checkError("Synchronize CUDA stream");
+  //cudaStreamSynchronize( stream );
+  //checkError("Synchronize CUDA stream");
 
   //Compute reference asynchronously on host
 #pragma omp parallel for
@@ -102,6 +105,9 @@ int main (int argc, char** argv)
       yH[i] = alpha * xH[i] + yH[i];
     }
 
+  //AFTER host calculation
+  cudaStreamSynchronize( stream );
+  checkError("Synchronize CUDA stream");
 	
   // Compare results
   for (i=0; i<numElements; ++i)

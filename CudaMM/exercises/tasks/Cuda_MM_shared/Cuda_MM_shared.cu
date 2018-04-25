@@ -57,7 +57,7 @@ __global__ void dgemm_gpu_shared(double* a, double* b, double* c, int n){
         if (((blockaY + threadIdx.y) < n) && (blockaX + threadIdx.x) < n) {
           // Copy block into shared memory
 	  // TODO
-	  asub[threadIdx.y][threadIdx.x] = a[(blockaY+threadIdx.y)*n+blockbX+threadIdx.x]; 
+	  aSub[threadIdx.y][threadIdx.x] = a[(blockaY+threadIdx.y)*n+blockaX+threadIdx.x]; 
         } else {
             aSub[threadIdx.y][threadIdx.x] = 0;
         }
@@ -117,7 +117,7 @@ float matrixMulOnDevice(double* a, double* b, double* c, int n)
 
     // Call the kernel 
     // TODO
-    dgemm_gpu_shared<<<gridDim, blockDim>>>();
+    dgemm_gpu_shared<<<gridDim, blockDim>>>(a,b,c,n);
     cudaDeviceSynchronize(); 
 
     cudaEventRecord( stop, 0 );
@@ -163,11 +163,11 @@ int main(int argc, char** argv)
     
     // Allocate memory for matrices (that can be accessed from host and device) 
     size = n * n * sizeof(double);
-    ...
+    cudaMallocManaged(&a,size);
     checkError("cudaMallocManaged: a");
-    ...
+    cudaMallocManaged(&b,size);
     checkError("cudaMallocManaged: b");  
-    ...
+    cudaMallocManaged(&c,size);
     checkError("cudaMallocManaged: c");
 
     // Init matrices A and B: A = E so result will be B
@@ -226,14 +226,14 @@ float getGflops (int n, float time) {
 }
 
 // Simple error checking function for CUDA actions
-
 void checkError (const char* action) {
-  
+
   cudaError_t error;
-  error = cudaGetLastError(); 
+  error = cudaGetLastError();
 
   if (error != cudaSuccess) {
     printf ("\nError while '%s': %s\nprogram terminated ...\n\n", action, cudaGetErrorString(error));
-    exit (EXIT_FAILURE);
+    exit (EXIT_SUCCESS);
   }
 }
+

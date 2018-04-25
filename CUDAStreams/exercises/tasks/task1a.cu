@@ -29,8 +29,10 @@ int main (int argc, char** argv)
 
   // Allocate host memory
   //TODO: allocate inputBufferH and outputBufferH in pinned host memory
-  inputBufferH = (float*) malloc( numElements*sizeof(float) );
-  outputBufferH = (float*) malloc( numElements*sizeof(float) );
+  cudaMallocHost(&inputBufferH, numElements*sizeof(float) );
+  checkError("Allocate device memory inputBufferD");
+  cudaMallocHost(&outputBufferH, numElements*sizeof(float) );
+  checkError("Allocate device memory inputBufferD");
 
   // Allocate device memory
   cudaMalloc( (void**) &inputBufferD, numElements*sizeof(float) );
@@ -63,8 +65,8 @@ int main (int argc, char** argv)
   cudaFree( inputBufferD );
 
   // TODO free buffers correctly
-  free( outputBufferH );
-  free( inputBufferH );
+  cudaFreeHost( outputBufferH );
+  cudaFreeHost( inputBufferH );
 
   cudaEventDestroy( endEvent );
   cudaEventDestroy( startEvent );

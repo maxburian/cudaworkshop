@@ -136,7 +136,7 @@ int main () {
 	      pa[ibuff*offset+i*m+j] = a[(irowtile*m+i)*n+iktile*m+j];
 	      pb[ibuff*offset+i*m+j] = b[(iktile*m+i)*n+icoltile*m+j];
 	      // TODO - copy correct tile into correct place in pc[] buffer
-	      ...
+	      pc[ibuff*offset+i*m+j] = c[(irowtile*m+i)*n+icoltile*m+j];
 	    }
 	  }
 
@@ -147,7 +147,7 @@ int main () {
 
 	  // tell cuBLAS which stream to use
 	  // TODO: set correct stream
-	  cublasSetStream( cublasHandle, ... );
+	  cublasSetStream( cublasHandle, myStreams[ibuff] );
 
 
 	  // perform dgemm
@@ -157,11 +157,11 @@ int main () {
 
 	  // copy result back to host
 	  // TODO: set correct stream
-	  cudaMemcpyAsync ( &pc[ibuff*offset], &d_c[ibuff*offset], m*m*sizeof(double), cudaMemcpyDeviceToHost, ... );
+	  cudaMemcpyAsync ( &pc[ibuff*offset], &d_c[ibuff*offset], m*m*sizeof(double), cudaMemcpyDeviceToHost, myStreams[ibuff] );
 
 	  // this event will signal when the D2H copy of the result has completed
 	  //TODO: add correct arguments
-	  cudaEventRecord ( ... );
+	  cudaEventRecord (bufferfilled[ibuff],myStreams[ibuff] );
 
 	  // update buffer / stream
 	  ibuff++;
@@ -176,6 +176,7 @@ int main () {
 
       // make sure that buffers are free
       // TODO: add synchronization operation
+      cudaEventSynchronize ( bufferfilled[itile] );
 
       // copy result in pinned buffer back to source 
       # pragma omp parallel for

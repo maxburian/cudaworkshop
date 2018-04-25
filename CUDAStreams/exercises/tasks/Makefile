@@ -29,11 +29,13 @@ run: run_task1a run_task1b run_task2
 
 .phony: run_task1a
 run_task1a: task1a
-	bsub -U cuda18_2 -I -R "rusage[ngpus_shared=1]" ./task1a
+	bsub -U cuda18_2 -I -R "rusage[ngpus_shared=1]" nvprof -f -o t1a.time ./task1a
+	bsub -U cuda18_2 -I -R "rusage[ngpus_shared=1]" nvprof -f --analysis-metrics -o t1a.metrics ./task1a
 
 .phony: run_task1b
 run_task1b: task1b
-	bsub -U cuda18_2 -I -R "rusage[ngpus_shared=1]" ./task1b
+	bsub -U cuda18_2 -I -R "rusage[ngpus_shared=1]" nvprof -f -o t1b.time ./task1b
+	bsub -U cuda18_2 -I -R "rusage[ngpus_shared=1]" nvprof -f --analysis-metrics -o t1b.metrics ./task1b
 
 .phony: run_task1a_um
 run_task1a_um: task1a_um

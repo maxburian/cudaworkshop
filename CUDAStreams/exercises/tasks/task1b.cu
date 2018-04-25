@@ -34,7 +34,9 @@ int main (int argc, char** argv)
     checkError("Create CUDA event endEvent");
 
     // TODO : Create uploadStream and downloadStream CUDA streams ...
-    
+    cudaStreamCreate(&uploadStream);
+    cudaStreamCreate(&downloadStream);    
+
     // Allocate host and device memory
     cudaMallocHost( (void**) &inputBufferH, numElements*sizeof(float) );
     checkError("Allocate pinned host memory inputBufferH");
@@ -50,9 +52,9 @@ int main (int argc, char** argv)
     checkError("Record CUDA event startEvent");
 	
     //TODO: Start memcpys asynchronously in seperate streams to overlap the host to device with the device to host transfer
-    cudaMemcpy( inputBufferD, inputBufferH, numElements*sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpyAsync( inputBufferD, inputBufferH, numElements*sizeof(float), cudaMemcpyHostToDevice,uploadStream);
     checkError("Copy host to device");
-    cudaMemcpy( outputBufferH, outputBufferD, numElements*sizeof(float), cudaMemcpyDeviceToHost);
+    cudaMemcpyAsync( outputBufferH, outputBufferD, numElements*sizeof(float), cudaMemcpyDeviceToHost,downloadStream);
     checkError("Copy device to host");
 
     /*synchronize default stream this will also wait for work in uploadStream and downloadStream */
@@ -73,7 +75,8 @@ int main (int argc, char** argv)
     cudaFreeHost( inputBufferH );
     
     //TODO Destroy the user created streams  ...
-
+    cudaStreamDestroy(downloadStream);
+    cudaStreamDestroy(uploadStream);
     cudaEventDestroy( endEvent );
     cudaEventDestroy( startEvent );
     cudaDeviceSynchronize();
