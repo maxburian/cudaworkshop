@@ -1,0 +1,10 @@
+Matrix Multiplication using multiple GPUs in the same host
+----------------------------------------------------------
+
+In this task, use multiple GPUs to speed up the matrix multiplication task. 
+Strip the matrix A into two equal halves A0 and A1. 
+GPU 0 calculates : A0 * B = C0
+GPU 1 calculates : A1 * B = C1
+Use the dgemm_multigpu.cu file for this task and compare the time for execution with the simple matrix multiplication (dgemm_gpu_simple).
+Use cudaSetDevice(...) in appropriate places to target a particular device on which your cuda calls need to issued.
+

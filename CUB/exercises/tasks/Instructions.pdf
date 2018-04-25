@@ -1,0 +1,697 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+% 'BasicFonts': class PDFDictionary 
+1 0 obj
+% The standard fonts dictionary
+<< /F1 2 0 R
+ /F2 3 0 R
+ /F3 5 0 R
+ /F4 6 0 R
+ /F5 7 0 R >>
+endobj
+% 'F1': class PDFType1Font 
+2 0 obj
+% Font Helvetica
+<< /BaseFont /Helvetica
+ /Encoding /WinAnsiEncoding
+ /Name /F1
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F2': class PDFType1Font 
+3 0 obj
+% Font Helvetica-Bold
+<< /BaseFont /Helvetica-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F2
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Annot.NUMBER1': class PDFDictionary 
+4 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://nvlabs.github.io/cub/classcub_1_1_block_radix_sort.html) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 116.0329
+ 722.5936
+ 206.0629
+ 734.5936 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'F3': class PDFType1Font 
+5 0 obj
+% Font Courier
+<< /BaseFont /Courier
+ /Encoding /WinAnsiEncoding
+ /Name /F3
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F4': class PDFType1Font 
+6 0 obj
+% Font Helvetica-BoldOblique
+<< /BaseFont /Helvetica-BoldOblique
+ /Encoding /WinAnsiEncoding
+ /Name /F4
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F5': class PDFType1Font 
+7 0 obj
+% Font Courier-Bold
+<< /BaseFont /Courier-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F5
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Page1': class PDFPage 
+8 0 obj
+% Page dictionary
+<< /Annots [ 4 0 R ]
+ /Contents 19 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 18 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'Annot.NUMBER2': class PDFDictionary 
+9 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://nvlabs.github.io/cub/namespacecub.html#a9d7e37497fdd99864c57adecda710401) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 293.9561
+ 705.5936
+ 404.5561
+ 717.5936 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Page2': class PDFPage 
+10 0 obj
+% Page dictionary
+<< /Annots [ 9 0 R ]
+ /Contents 20 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 18 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'R11': class PDFCatalog 
+11 0 obj
+% Document Root
+<< /Outlines 13 0 R
+ /PageLabels 21 0 R
+ /PageMode /UseNone
+ /Pages 18 0 R
+ /Type /Catalog >>
+endobj
+% 'R12': class PDFInfo 
+12 0 obj
+<< /Author ()
+ /CreationDate (D:20150422115831-01'00')
+ /Creator (\(unspecified\))
+ /Keywords ()
+ /Producer (ReportLab PDF Library - www.reportlab.com)
+ /Subject (\(unspecified\))
+ /Title (Instructions) >>
+endobj
+% 'R13': class PDFOutlines 
+13 0 obj
+<< /Count 4
+ /First 14 0 R
+ /Last 17 0 R
+ /Type /Outlines >>
+endobj
+% 'Outline.0': class OutlineEntryObject 
+14 0 obj
+<< /Dest [ 8 0 R
+ /XYZ
+ 62.69291
+ 707.0236
+ 0 ]
+ /Next 15 0 R
+ /Parent 13 0 R
+ /Title (Simple Kernel) >>
+endobj
+% 'Outline.1': class OutlineEntryObject 
+15 0 obj
+<< /Dest [ 8 0 R
+ /XYZ
+ 62.69291
+ 378.6236
+ 0 ]
+ /Next 16 0 R
+ /Parent 13 0 R
+ /Prev 14 0 R
+ /Title (Better data load and store) >>
+endobj
+% 'Outline.2': class OutlineEntryObject 
+16 0 obj
+<< /Dest [ 8 0 R
+ /XYZ
+ 62.69291
+ 173.4236
+ 0 ]
+ /Next 17 0 R
+ /Parent 13 0 R
+ /Prev 15 0 R
+ /Title (Flexibility for tuning) >>
+endobj
+% 'Outline.3': class OutlineEntryObject 
+17 0 obj
+<< /Dest [ 10 0 R
+ /XYZ
+ 62.69291
+ 597.0236
+ 0 ]
+ /Parent 13 0 R
+ /Prev 16 0 R
+ /Title (Extra credit) >>
+endobj
+% 'R18': class PDFPages 
+18 0 obj
+% page tree
+<< /Count 2
+ /Kids [ 8 0 R
+ 10 0 R ]
+ /Type /Pages >>
+endobj
+% 'R19': class PDFStream 
+19 0 obj
+% page stream
+<< /Length 7617 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+BT 1 0 0 1 0 9.64 Tm 177.7149 0 Td 24 TL /F2 20 Tf 0 0 0 rg (Instructions) Tj T* -177.7149 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 719.0236 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (We will use ) Tj 0 0 .501961 rg (cub::BlockRadixSort) Tj 0 0 0 rg ( to sort some random numbers on the GPU.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 686.0236 cm
+q
+BT 1 0 0 1 0 8.435 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Simple Kernel) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 668.0236 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (Add the ) Tj /F3 10 Tf (typedef) Tj /F1 10 Tf (, shared memory, and the call to the sorting routine to the kernel.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 656.0236 cm
+Q
+q
+1 0 0 1 62.69291 396.6236 cm
+.960784 .960784 .862745 rg
+n 0 259.4 469.8898 -259.4 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 233.4 Tm  T* ET
+q
+1 0 0 1 16 228.4 cm
+q
+BT 1 0 0 1 0 6.025 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Tip) Tj T* ET
+Q
+Q
+q
+1 0 0 1 16 192.4 cm
+q
+BT 1 0 0 1 0 16.82 Tm .662651 Tw 12 TL /F1 10 Tf 0 0 0 rg (Most calls to the CUDA API return a status. The following two macros make understanding these) Tj T* 0 Tw (status messages easier:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 16 75.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 436.6898 108 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 84.75 300 12 re f*
+.960784 .960784 .862745 rg
+n 0 72.75 288 12 re f*
+.960784 .960784 .862745 rg
+n 0 60.75 198 12 re f*
+.960784 .960784 .862745 rg
+n 0 24.75 372 12 re f*
+.960784 .960784 .862745 rg
+n 0 12.75 288 12 re f*
+.960784 .960784 .862745 rg
+n 0 .75 198 12 re f*
+BT 1 0 0 1 0 86 Tm 12 TL /F3 10 Tf .737255 .478431 0 rg (#define CUDA_CALL\(x\) do { if\(\(x\)!=cudaSuccess\) { \\) Tj T* (  printf\("Error at %s:%d\\n",__FILE__,__LINE__\);\\) Tj T* (  return EXIT_FAILURE;}} while\(0\)) Tj T* 0 0 0 rg  T*  T* .737255 .478431 0 rg (#define CURAND_CALL\(x\) do { if\(\(x\)!=CURAND_STATUS_SUCCESS\) { \\) Tj T* (  printf\("Error at %s:%d\\n",__FILE__,__LINE__\);\\) Tj T* (  return EXIT_FAILURE;}} while\(0\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 16 49.2 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (They are used like this:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 16 16 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 436.6898 24 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 .75 54 12 re f*
+.960784 .960784 .862745 rg
+n 54 .75 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 .75 60 12 re f*
+.960784 .960784 .862745 rg
+n 120 .75 6 12 re f*
+.960784 .960784 .862745 rg
+n 126 .75 6 12 re f*
+.960784 .960784 .862745 rg
+n 132 .75 30 12 re f*
+.960784 .960784 .862745 rg
+n 162 .75 6 12 re f*
+.960784 .960784 .862745 rg
+n 174 .75 24 12 re f*
+.960784 .960784 .862745 rg
+n 204 .75 6 12 re f*
+.960784 .960784 .862745 rg
+n 216 .75 36 12 re f*
+.960784 .960784 .862745 rg
+n 252 .75 6 12 re f*
+.960784 .960784 .862745 rg
+n 258 .75 36 12 re f*
+.960784 .960784 .862745 rg
+n 294 .75 24 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (CUDA_CALL) Tj (\() Tj (cudaMalloc) Tj (\() Tj .4 .4 .4 rg (&) Tj 0 0 0 rg (d_gpu) Tj (,) Tj ( ) Tj .4 .4 .4 rg (4096) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (*) Tj 0 0 0 rg ( ) Tj /F5 10 Tf 0 .501961 0 rg (sizeof) Tj /F3 10 Tf 0 0 0 rg (\() Tj .690196 0 .25098 rg (double) Tj 0 0 0 rg (\)\)\);) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 J
+1 j
+.662745 .662745 .662745 RG
+.5 w
+n 0 259.4 m 469.8898 259.4 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 259.4 l S
+n 469.8898 0 m 469.8898 259.4 l S
+Q
+Q
+q
+1 0 0 1 62.69291 390.6236 cm
+Q
+q
+1 0 0 1 62.69291 357.6236 cm
+q
+BT 1 0 0 1 0 8.435 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Better data load and store) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 339.6236 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (Use cub::BlockLoad and cub::BlockStore to load and store your data instead of) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 282.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 48 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 24.75 18 12 re f*
+.960784 .960784 .862745 rg
+n 24 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 24.75 18 12 re f*
+.960784 .960784 .862745 rg
+n 54 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 84 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 108 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 120 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 126 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 138 24.75 12 12 re f*
+.960784 .960784 .862745 rg
+n 150 24.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 24.75 12 12 re f*
+.960784 .960784 .862745 rg
+n 24 12.75 30 12 re f*
+.960784 .960784 .862745 rg
+n 54 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 12.75 42 12 re f*
+.960784 .960784 .862745 rg
+n 132 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 138 12.75 12 12 re f*
+.960784 .960784 .862745 rg
+n 156 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 168 12.75 6 12 re f*
+.960784 .960784 .862745 rg
+n 174 12.75 12 12 re f*
+.960784 .960784 .862745 rg
+n 0 .75 6 12 re f*
+BT 1 0 0 1 0 26 Tm 12 TL /F5 10 Tf 0 .501961 0 rg (for) Tj /F3 10 Tf 0 0 0 rg ( ) Tj (\() Tj .690196 0 .25098 rg (int) Tj 0 0 0 rg ( ) Tj (i) Tj ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (0) Tj 0 0 0 rg (;) Tj ( ) Tj (i) Tj ( ) Tj .4 .4 .4 rg (<) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (8) Tj 0 0 0 rg (;) Tj ( ) Tj .4 .4 .4 rg (++) Tj 0 0 0 rg (i) Tj (\){) Tj  T* (    ) Tj (items) Tj ([) Tj (i) Tj (]) Tj ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj (data_in) Tj ([) Tj (i0) Tj ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj (i) Tj (];) Tj  T* (}) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 262.4236 cm
+Q
+q
+1 0 0 1 62.69291 191.4236 cm
+.960784 .960784 .862745 rg
+n 0 71 469.8898 -71 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 45 Tm  T* ET
+q
+1 0 0 1 16 40 cm
+q
+BT 1 0 0 1 0 6.025 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Tip) Tj T* ET
+Q
+Q
+q
+1 0 0 1 16 16 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (You may use a union for the shared memory.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.662745 .662745 .662745 RG
+.5 w
+n 0 71 m 469.8898 71 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 71 l S
+n 469.8898 0 m 469.8898 71 l S
+Q
+Q
+q
+1 0 0 1 62.69291 185.4236 cm
+Q
+q
+1 0 0 1 62.69291 152.4236 cm
+q
+BT 1 0 0 1 0 8.435 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Flexibility for tuning) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 122.4236 cm
+q
+BT 1 0 0 1 0 16.82 Tm -0.195896 Tw 12 TL /F1 10 Tf 0 0 0 rg (Let's make our kernel more flexible by adding more template parameters. The data type is already given by) Tj T* 0 Tw (a template parameter.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 116.4236 cm
+Q
+q
+1 0 0 1 62.69291 116.4236 cm
+Q
+q
+1 0 0 1 62.69291 92.42362 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+BT 1 0 0 1 0 4.82 Tm 5.66 0 Td 12 TL /F1 10 Tf 0 0 0 rg (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 16.82 Tm .770651 Tw 12 TL /F1 10 Tf 0 0 0 rg (Replace the hardcoded 512 by ) Tj /F3 10 Tf (BLOCK_WIDTH) Tj /F1 10 Tf ( and pass it as a template parameter. Don't forget to) Tj T* 0 Tw (adjust the main program.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 86.42362 cm
+Q
+ 
+endstream
+endobj
+% 'R20': class PDFStream 
+20 0 obj
+% page stream
+<< /Length 2834 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+BT 1 0 0 1 0 4.82 Tm 5.66 0 Td 12 TL /F1 10 Tf 0 0 0 rg (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 16.82 Tm .715318 Tw 12 TL /F1 10 Tf 0 0 0 rg (Replace the hardcoded 8 \(number of items per thread\). with ) Tj /F3 10 Tf (ITEMS_PER_THREAD) Tj /F1 10 Tf ( and pass it as a) Tj T* 0 Tw (template parameter. Don't forget to adjust the main program.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 741.0236 cm
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (This is better already. Add a couple of kernel calls with different parameters and take a look at the profile.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 681.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+BT 1 0 0 1 0 4.82 Tm 5.66 0 Td 12 TL /F1 10 Tf 0 0 0 rg (3.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 28.82 Tm .881647 Tw 12 TL /F1 10 Tf 0 0 0 rg (There are different ways of loading data \(see ) Tj 0 0 .501961 rg (cub::BlockLoadAlgorithm) Tj 0 0 0 rg (\). Add a template parameter) Tj T* 0 Tw 3.041412 Tw /F3 10 Tf (BLOCK_LOAD_ALGO) Tj /F1 10 Tf ( and use it in the typedef of BlockLoadT. Don't forget to adjust the main) Tj T* 0 Tw (program.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 675.0236 cm
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 5.66 0 Td 12 TL /F1 10 Tf 0 0 0 rg (4.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (Do the same thing as in 3.\) for BlockStore.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+BT 1 0 0 1 0 4.82 Tm 5.66 0 Td 12 TL /F1 10 Tf 0 0 0 rg (5.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 40.82 Tm 2.397485 Tw 12 TL /F1 10 Tf 0 0 0 rg (Finally, add at least 3 calls using different values for the template parameters and look at the) Tj T* 0 Tw .263516 Tw (program with the profiler. To make the problem more realistic, you can use, e.g, 1000 times the data) Tj T* 0 Tw 1.428735 Tw (and run 1000 blocks. Don't forget to calculate the offset for each block. Otherwise, you'll sort the) Tj T* 0 Tw (same data 1000 times.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+Q
+q
+1 0 0 1 62.69291 576.0236 cm
+q
+BT 1 0 0 1 0 8.435 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Extra credit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 558.0236 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (Clean up the code and add proper error handling. The following two macros may be useful:) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+% 'R21': class PDFPageLabels 
+21 0 obj
+% Document Root
+<< /Nums [ 0
+ 22 0 R
+ 1
+ 23 0 R ] >>
+endobj
+% 'R22': class PDFPageLabel 
+22 0 obj
+% None
+<< /S /D
+ /St 1 >>
+endobj
+% 'R23': class PDFPageLabel 
+23 0 obj
+% None
+<< /S /D
+ /St 2 >>
+endobj
+xref
+0 24
+0000000000 65535 f
+0000000113 00000 n
+0000000257 00000 n
+0000000422 00000 n
+0000000609 00000 n
+0000000877 00000 n
+0000001038 00000 n
+0000001227 00000 n
+0000001396 00000 n
+0000001709 00000 n
+0000001992 00000 n
+0000002293 00000 n
+0000002452 00000 n
+0000002712 00000 n
+0000002837 00000 n
+0000003010 00000 n
+0000003211 00000 n
+0000003408 00000 n
+0000003565 00000 n
+0000003681 00000 n
+0000011397 00000 n
+0000014334 00000 n
+0000014440 00000 n
+0000014517 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
+ [(E\322i7\246Y!\010\031\014.\230\205\354jC) (E\322i7\246Y!\010\031\014.\230\205\354jC)] 
+
+ /Info 12 0 R
+ /Root 11 0 R
+ /Size 24 >>
+startxref
+14564
+%%EOF

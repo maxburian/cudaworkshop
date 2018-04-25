@@ -1,0 +1,22 @@
+GENCODE_SM30	:= -gencode arch=compute_30,code=sm_30
+GENCODE_SM35	:= -gencode arch=compute_35,code=sm_35
+GENCODE_SM37	:= -gencode arch=compute_37,code=sm_37
+GENCODE_SM50	:= -gencode arch=compute_50,code=sm_50
+GENCODE_SM52	:= -gencode arch=compute_52,code=sm_52
+GENCODE_SM60	:= -gencode arch=compute_60,code=sm_60 -gencode arch=compute_60,code=compute_60
+GENCODE_FLAGS	:= $(GENCODE_SM37)
+NVCC_FLAGS = -lineinfo $(GENCODE_FLAGS)
+all: run
+
+transpose: transpose.cu Makefile
+	nvcc $(NVCC_FLAGS) -o transpose transpose.cu
+
+run: transpose
+	./transpose
+
+profile: transpose
+	nvprof -o transpose.timeline.nvprof ./transpose
+	nvprof --analysis-metrics -o transpose.metrics.nvprof ./transpose
+
+clean:
+	rm -f transpose transpose.*.nvprof

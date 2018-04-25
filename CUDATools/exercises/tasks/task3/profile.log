@@ -1,0 +1,28 @@
+bsub -U cuda18_0 -Is -R "rusage[ngpus_shared=1]" nvprof ./scale_vector_um
+Job <27319> is submitted to default queue <normal.i>.
+==102804== NVPROF is profiling process 102804, command: ./scale_vector_um
+Passed!
+==102804== Profiling application: ./scale_vector_um
+==102804== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  1.7288ms         1  1.7288ms  1.7288ms  1.7288ms  scale(float, float*, float*, int)
+      API calls:   96.87%  204.58ms         2  102.29ms  37.554us  204.54ms  cudaMallocManaged
+                    1.17%  2.4639ms       376  6.5520us     254ns  253.44us  cuDeviceGetAttribute
+                    0.82%  1.7335ms         1  1.7335ms  1.7335ms  1.7335ms  cudaDeviceSynchronize
+                    0.72%  1.5287ms         4  382.19us  374.49us  398.83us  cuDeviceTotalMem
+                    0.27%  566.05us         2  283.02us  280.79us  285.26us  cudaFree
+                    0.10%  221.72us         4  55.429us  51.572us  62.516us  cuDeviceGetName
+                    0.03%  73.237us         1  73.237us  73.237us  73.237us  cudaLaunch
+                    0.00%  6.5840us         1  6.5840us  6.5840us  6.5840us  cudaSetDevice
+                    0.00%  5.5440us         4  1.3860us     248ns  4.4920us  cudaSetupArgument
+                    0.00%  3.8050us         8     475ns     283ns     717ns  cuDeviceGet
+                    0.00%  2.8640us         3     954ns     467ns  1.7780us  cuDeviceGetCount
+                    0.00%  2.5800us         1  2.5800us  2.5800us  2.5800us  cudaConfigureCall
+
+==102804== Unified Memory profiling result:
+Device "Tesla P100-SXM2-16GB (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      35  234.06KB  64.000KB  960.00KB  8.000000MB  288.8640us  Host To Device
+      80  204.80KB  64.000KB  960.00KB  16.00000MB  568.7040us  Device To Host
+      43         -         -         -           -  1.956064ms  Gpu page fault groups
+Total CPU Page faults: 72
